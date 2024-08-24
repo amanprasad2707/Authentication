@@ -3,7 +3,6 @@ import dotenv from 'dotenv';
 dotenv.config()
 
 const connectDB = async () => {
-  console.log(process.env.MONGO_DB_URI);
 
   try {
     // Attach event listeners before attempting to connect
