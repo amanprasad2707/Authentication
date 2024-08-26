@@ -13,6 +13,7 @@ import {
 export const signup = async (req, res) => {
 
   const { name, email, password } = req.body;
+
   try {
     if (!name || !email || !password) {
       throw new Error("All fields are required")
